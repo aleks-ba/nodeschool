@@ -1,8 +1,6 @@
-const fs = require('fs');
-const path = require('path');
 const pathArgument = process.argv[2];
-const extension = process.argv[3];
-const readDir = require('../5_lesson/readDirModule.js');
+const extension    = process.argv[3];
+const readDir      = require('../5_lesson/readDirModule.js');
 
 readDir(pathArgument, extension, (error, data) => {
     if (error) {

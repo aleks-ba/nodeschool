@@ -1,7 +1,7 @@
-const fs = require('fs');
+const fs   = require('fs');
 const path = require('path');
 
-module.exports = function (pathName, extName, callback) {
+module.exports = function(pathName, extName, callback) {
     fs.readdir(pathName, (error, filesNameList) => {
         if (error) {
             return callback(error)
